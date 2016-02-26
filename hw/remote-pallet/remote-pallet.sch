@@ -1,0 +1,231 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:remote-pallet-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM1084IS-3.3/NOPB U?
+U 1 1 56CFD882
+P 2100 1200
+F 0 "U?" H 2300 1000 50  0000 C CNN
+F 1 "LM1084IS-3.3/NOPB" H 1800 1400 50  0000 L CNN
+F 2 "TO-263" H 2100 1300 50  0000 C CIN
+F 3 "" H 2100 1200 50  0000 C CNN
+	1    2100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56CFD8F0
+P 2100 1600
+F 0 "#PWR?" H 2100 1350 50  0001 C CNN
+F 1 "GND" H 2100 1450 50  0000 C CNN
+F 2 "" H 2100 1600 50  0000 C CNN
+F 3 "" H 2100 1600 50  0000 C CNN
+	1    2100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1150 1700 1150
+Wire Wire Line
+	2500 1150 2650 1150
+Wire Wire Line
+	2100 1600 2100 1450
+$Sheet
+S 5200 2100 1500 750 
+U 56CFDAEF
+F0 "ematch-0" 59
+F1 "ematch-driver.sch" 59
+F2 "GPIO_IN_SWITCH" I L 5200 2350 60 
+F3 "GPIO_IN_SENSE" I L 5200 2500 60 
+F4 "VSENSE" I L 5200 2600 60 
+F5 "GND" I L 5200 2750 60 
+F6 "VCC" I L 5200 2200 60 
+F7 "EMATCH_VCC" I R 6700 2200 60 
+F8 "EMATCH_GND" I R 6700 2750 60 
+$EndSheet
+$Sheet
+S 5200 3100 1500 750 
+U 56D0EADF
+F0 "ematch-1" 60
+F1 "ematch-driver.sch" 60
+F2 "GPIO_IN_SENSE" I L 5200 3500 60 
+F3 "GPIO_IN_SWITCH" I L 5200 3350 60 
+F4 "VCC" I L 5200 3200 60 
+F5 "VSENSE" I L 5200 3600 60 
+F6 "EMATCH_VCC" I R 6700 3200 60 
+F7 "EMATCH_GND" I R 6700 3750 60 
+F8 "GND" I L 5200 3750 60 
+$EndSheet
+$Sheet
+S 5200 4050 1500 750 
+U 56D11458
+F0 "ematch-2" 60
+F1 "ematch-driver.sch" 60
+F2 "GPIO_IN_SENSE" I L 5200 4450 60 
+F3 "GPIO_IN_SWITCH" I L 5200 4300 60 
+F4 "VCC" I L 5200 4150 60 
+F5 "VSENSE" I L 5200 4550 60 
+F6 "EMATCH_VCC" I R 6700 4150 60 
+F7 "EMATCH_GND" I R 6700 4700 60 
+F8 "GND" I L 5200 4700 60 
+$EndSheet
+$Comp
+L R R?
+U 1 1 56D19B06
+P 7050 2450
+F 0 "R?" V 7130 2450 50  0000 C CNN
+F 1 "R" V 7050 2450 50  0000 C CNN
+F 2 "" V 6980 2450 50  0000 C CNN
+F 3 "" H 7050 2450 50  0000 C CNN
+	1    7050 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56D19F28
+P 7050 3500
+F 0 "R?" V 7130 3500 50  0000 C CNN
+F 1 "R" V 7050 3500 50  0000 C CNN
+F 2 "" V 6980 3500 50  0000 C CNN
+F 3 "" H 7050 3500 50  0000 C CNN
+	1    7050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56D19FFB
+P 7050 4400
+F 0 "R?" V 7130 4400 50  0000 C CNN
+F 1 "R" V 7050 4400 50  0000 C CNN
+F 2 "" V 6980 4400 50  0000 C CNN
+F 3 "" H 7050 4400 50  0000 C CNN
+	1    7050 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2200 7050 2200
+Wire Wire Line
+	7050 2200 7050 2300
+Wire Wire Line
+	7050 2600 7050 2750
+Wire Wire Line
+	7050 2750 6700 2750
+Wire Wire Line
+	6700 3200 7050 3200
+Wire Wire Line
+	7050 3200 7050 3350
+Wire Wire Line
+	7050 3650 7050 3750
+Wire Wire Line
+	7050 3750 6700 3750
+Wire Wire Line
+	6700 4150 7050 4150
+Wire Wire Line
+	7050 4150 7050 4250
+Wire Wire Line
+	7050 4550 7050 4700
+Wire Wire Line
+	7050 4700 6700 4700
+Text GLabel 5050 2200 0    60   Input ~ 0
+12V
+Text GLabel 5050 3200 0    60   Input ~ 0
+12V
+Wire Wire Line
+	5050 2200 5200 2200
+Wire Wire Line
+	5050 3200 5200 3200
+$Comp
+L GND #PWR?
+U 1 1 56D28AC8
+P 5050 2800
+F 0 "#PWR?" H 5050 2550 50  0001 C CNN
+F 1 "GND" H 5050 2650 50  0000 C CNN
+F 2 "" H 5050 2800 50  0000 C CNN
+F 3 "" H 5050 2800 50  0000 C CNN
+	1    5050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56D28F92
+P 5050 3800
+F 0 "#PWR?" H 5050 3550 50  0001 C CNN
+F 1 "GND" H 5050 3650 50  0000 C CNN
+F 2 "" H 5050 3800 50  0000 C CNN
+F 3 "" H 5050 3800 50  0000 C CNN
+	1    5050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2800 5050 2750
+Wire Wire Line
+	5050 2750 5200 2750
+Wire Wire Line
+	5050 3800 5050 3750
+Wire Wire Line
+	5050 3750 5200 3750
+$Comp
+L GND #PWR?
+U 1 1 56D2B57F
+P 5050 4750
+F 0 "#PWR?" H 5050 4500 50  0001 C CNN
+F 1 "GND" H 5050 4600 50  0000 C CNN
+F 2 "" H 5050 4750 50  0000 C CNN
+F 3 "" H 5050 4750 50  0000 C CNN
+	1    5050 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4750 5050 4700
+Wire Wire Line
+	5050 4700 5200 4700
+Text GLabel 5050 4150 0    60   Input ~ 0
+12V
+Wire Wire Line
+	5050 4150 5200 4150
+Text GLabel 1550 1150 0    60   Input ~ 0
+12V
+Text GLabel 2650 1150 2    60   Input ~ 0
+3.3V
+$EndSCHEMATC
