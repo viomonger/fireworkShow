@@ -3,9 +3,17 @@ The current plan is to use Arduino bords and an RF transciever to communicte.
 We have yet to determine how to power the units. Batteries have been looked at (motorcycle batteries might be good),
 and wired power has been considered.
 
+I think the controlling computer will use some OTS hardware for RF signaling, but could use another arduino + transciever combo to communicate.
+
 Other options explored:
 WiFi (XBee?) - too expensive at $25 per XBee
 Bluetooth - Not looked into very much
 CAN Bus - No in out = no chain. Could develop own bord and connector, but expensive.
 
 Possible expansion with self testing e-match points would be really cool.
+
+Current hardware:
+Arduino Pro Mini 3.3V - I got mine from amazon, but they are a sparkfun product. Sparkfun was out when I was looking.
+- note that the 3.3 is required for the transciever.
+RFM22 Breakout (RFM22 Transciever, breakout by sparkfun) Plan for the final design to not use the breakout. Transciever is very cheap on its owm.
+I also have 2 sparkfun redboards that I might use to work with.
