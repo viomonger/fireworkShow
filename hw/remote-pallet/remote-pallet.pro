@@ -1,4 +1,4 @@
-update=16-Mar-16 22:37:28
+update=17-Mar-16 21:31:42
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=iot_photon_headers
+LibName31=particle-boards
