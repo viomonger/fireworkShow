@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:iot_photon_headers
 LIBS:particle-boards
 LIBS:remote-pallet-cache
 EELAYER 25 0

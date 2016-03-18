@@ -1,6 +1,6 @@
-update=17-Mar-16 21:31:42
+update=Friday, March 18, 2016 'PMt' 12:18:57 PM
 version=1
-last_client=kicad
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -58,5 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=iot_photon_headers
-LibName31=particle-boards
+LibName30=particle-boards
