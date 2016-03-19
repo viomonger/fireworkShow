@@ -1,6 +1,6 @@
-update=Friday, March 18, 2016 'PMt' 12:18:57 PM
+update=18-Mar-16 20:44:26
 version=1
-last_client=eeschema
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=particle-boards
+LibName31=IC REG LDO 3.3V 0.2A SOT23-5

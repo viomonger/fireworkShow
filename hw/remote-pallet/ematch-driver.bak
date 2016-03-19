@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:particle-boards
+LIBS:IC REG LDO 3.3V 0.2A SOT23-5
 LIBS:remote-pallet-cache
 EELAYER 25 0
 EELAYER END

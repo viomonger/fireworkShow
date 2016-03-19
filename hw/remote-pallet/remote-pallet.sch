@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:particle-boards
+LIBS:IC REG LDO 3.3V 0.2A SOT23-5
 LIBS:remote-pallet-cache
 EELAYER 25 0
 EELAYER END
@@ -105,10 +106,6 @@ F6 "EMATCH_VCC" I R 6700 4150 60
 F7 "EMATCH_GND" I R 6700 4700 60 
 F8 "GND" I L 5200 4700 60 
 $EndSheet
-Text GLabel 5050 2200 0    60   Input ~ 0
-12V
-Text GLabel 5050 3200 0    60   Input ~ 0
-12V
 $Comp
 L GND #PWR02
 U 1 1 56D28AC8
@@ -142,8 +139,6 @@ F 3 "" H 5050 4750 50  0000 C CNN
 	1    5050 4750
 	1    0    0    -1  
 $EndComp
-Text GLabel 5050 4150 0    60   Input ~ 0
-12V
 Text GLabel 800  950  0    60   Input ~ 0
 12V
 Text GLabel 2900 950  2    60   Input ~ 0
@@ -172,8 +167,6 @@ F 3 "" H 5050 5750 50  0000 C CNN
 	1    5050 5750
 	1    0    0    -1  
 $EndComp
-Text GLabel 5050 5150 0    60   Input ~ 0
-12V
 $Sheet
 S 8200 2100 1500 750 
 U 56EAA678
@@ -213,10 +206,6 @@ F6 "EMATCH_VCC" I R 9700 4150 60
 F7 "EMATCH_GND" I R 9700 4700 60 
 F8 "GND" I L 8200 4700 60 
 $EndSheet
-Text GLabel 8050 2200 0    60   Input ~ 0
-12V
-Text GLabel 8050 3200 0    60   Input ~ 0
-12V
 $Comp
 L GND #PWR06
 U 1 1 56EAA6B2
@@ -250,8 +239,6 @@ F 3 "" H 8050 4750 50  0000 C CNN
 	1    8050 4750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8050 4150 0    60   Input ~ 0
-12V
 $Sheet
 S 8200 5050 1500 750 
 U 56EAA6CF
@@ -276,8 +263,6 @@ F 3 "" H 8050 5750 50  0000 C CNN
 	1    8050 5750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8050 5150 0    60   Input ~ 0
-12V
 $Comp
 L SPST SW2
 U 1 1 56EBB10B
@@ -405,7 +390,7 @@ Text GLabel 4450 800  1    60   Input ~ 0
 3.3V
 Text GLabel 4450 1600 3    60   Input ~ 0
 VCCsense
-Text GLabel 5700 800  0    60   Input ~ 0
+Text GLabel 5600 700  0    60   Input ~ 0
 Armed
 Text GLabel 3950 1250 0    60   Input ~ 0
 SenseSwitch
@@ -471,7 +456,7 @@ Text GLabel 3150 3700 2    60   Input ~ 0
 Fire5
 Text GLabel 3150 3600 2    60   Input ~ 0
 Fire6
-Text GLabel 3150 3500 2    60   Input ~ 0
+Text GLabel 3150 2900 2    60   Input ~ 0
 Fire7
 Text GLabel 1550 4200 0    60   Input ~ 0
 Sense0
@@ -489,32 +474,21 @@ Text GLabel 1550 3600 0    60   Input ~ 0
 Sense6
 Text GLabel 1550 3300 0    60   Input ~ 0
 Sense7
-Text GLabel 3150 2900 2    60   Input ~ 0
+Text GLabel 3150 3500 2    60   Input ~ 0
 SenseSwitch
 Text GLabel 3150 3000 2    60   Input ~ 0
 Armed
 Text GLabel 1550 3100 0    60   Input ~ 0
 3.3V
 $Comp
-L LM1084IS-3.3/NOPB U3
-U 1 1 56EB16BF
-P 6300 850
-F 0 "U3" H 6500 650 50  0000 C CNN
-F 1 "Armed Sense" H 6000 1050 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:TO-263-3Lead" H 6300 950 50  0000 C CIN
-F 3 "" H 6300 850 50  0000 C CNN
-	1    6300 850 
-	-1   0    0    -1  
-$EndComp
-$Comp
 L GND #PWR019
 U 1 1 56EB2D78
-P 6300 1400
-F 0 "#PWR019" H 6300 1150 50  0001 C CNN
-F 1 "GND" H 6300 1250 50  0000 C CNN
-F 2 "" H 6300 1400 50  0000 C CNN
-F 3 "" H 6300 1400 50  0000 C CNN
-	1    6300 1400
+P 6250 1350
+F 0 "#PWR019" H 6250 1100 50  0001 C CNN
+F 1 "GND" H 6250 1200 50  0000 C CNN
+F 2 "" H 6250 1350 50  0000 C CNN
+F 3 "" H 6250 1350 50  0000 C CNN
+	1    6250 1350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -555,13 +529,13 @@ $EndComp
 $Comp
 L CP1 C3
 U 1 1 56EDA658
-P 5800 1100
-F 0 "C3" H 5825 1200 50  0000 L CNN
-F 1 "10uF" H 5825 1000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5800 1100 50  0000 C CNN
-F 3 "" H 5800 1100 50  0000 C CNN
-F 4 "tantalum" H 5800 1100 60  0001 C CNN "type"
-	1    5800 1100
+P 5700 1000
+F 0 "C3" H 5725 1100 50  0000 L CNN
+F 1 "0.47uF" H 5725 900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5700 1000 50  0000 C CNN
+F 3 "" H 5700 1000 50  0000 C CNN
+F 4 "low-esr ceramic" H 5700 1000 60  0001 C CNN "type"
+	1    5700 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -572,7 +546,7 @@ F 0 "C4" H 6775 1150 50  0000 L CNN
 F 1 "10uF" H 6775 950 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6750 1050 50  0000 C CNN
 F 3 "" H 6750 1050 50  0000 C CNN
-F 4 "tantalum" H 6750 1050 60  0001 C CNN "type"
+F 4 "low-esr ceramic" H 6750 1050 60  0001 C CNN "type"
 	1    6750 1050
 	1    0    0    -1  
 $EndComp
@@ -680,25 +654,19 @@ Wire Wire Line
 Wire Wire Line
 	2350 1400 2350 1250
 Wire Wire Line
-	6700 2200 7450 2200
-Wire Wire Line
 	7050 2200 7050 2300
-Wire Wire Line
-	7450 3200 6700 3200
 Wire Wire Line
 	7050 3200 7050 3350
 Wire Wire Line
 	7050 3750 6700 3750
 Wire Wire Line
-	7450 4150 6700 4150
-Wire Wire Line
 	7050 4150 7050 4250
 Wire Wire Line
 	7050 4700 6700 4700
 Wire Wire Line
-	5050 2200 5200 2200
+	4550 2200 5200 2200
 Wire Wire Line
-	5050 3200 5200 3200
+	4550 3200 5200 3200
 Wire Wire Line
 	5050 2800 5050 2750
 Wire Wire Line
@@ -708,9 +676,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 3750 5200 3750
 Wire Wire Line
-	5050 4150 5200 4150
-Wire Wire Line
-	7450 5150 6700 5150
+	4550 4150 5200 4150
 Wire Wire Line
 	7050 5150 7050 5250
 Wire Wire Line
@@ -720,37 +686,29 @@ Wire Wire Line
 Wire Wire Line
 	5050 5700 5200 5700
 Wire Wire Line
-	5050 5150 5200 5150
-Wire Wire Line
-	9700 2200 10350 2200
+	4550 5150 5200 5150
 Wire Wire Line
 	10050 2200 10050 2300
 Wire Wire Line
 	10050 2750 9700 2750
 Wire Wire Line
-	10350 3200 9700 3200
-Wire Wire Line
 	10050 3200 10050 3350
 Wire Wire Line
 	10050 3750 9700 3750
-Wire Wire Line
-	10350 4150 9700 4150
 Wire Wire Line
 	10050 4150 10050 4250
 Wire Wire Line
 	10050 4700 9700 4700
 Wire Wire Line
-	8050 2200 8200 2200
+	7550 2200 8200 2200
 Wire Wire Line
-	8050 3200 8200 3200
+	7550 3200 8200 3200
 Wire Wire Line
 	8050 3800 8050 3750
 Wire Wire Line
 	8050 3750 8200 3750
 Wire Wire Line
-	8050 4150 8200 4150
-Wire Wire Line
-	10350 5150 9700 5150
+	7550 4150 8200 4150
 Wire Wire Line
 	10050 5150 10050 5300
 Wire Wire Line
@@ -760,30 +718,12 @@ Wire Wire Line
 Wire Wire Line
 	8050 5700 8200 5700
 Wire Wire Line
-	8050 5150 8200 5150
+	7550 5150 8200 5150
 Wire Wire Line
-	9750 1250 10350 1250
+	9750 1250 10400 1250
 Wire Wire Line
-	10350 800  10350 5150
-Connection ~ 10050 2200
-Connection ~ 10050 3200
-Connection ~ 10350 2200
-Connection ~ 10050 4150
-Connection ~ 10350 3200
-Connection ~ 10050 5150
-Connection ~ 10350 4150
-Wire Wire Line
-	10350 1600 7450 1600
-Wire Wire Line
-	7450 1600 7450 5150
-Connection ~ 7050 2200
+	4550 1600 10400 1600
 Connection ~ 10350 1600
-Connection ~ 7050 3200
-Connection ~ 7450 2200
-Connection ~ 7050 4150
-Connection ~ 7450 3200
-Connection ~ 7050 5150
-Connection ~ 7450 4150
 Connection ~ 10050 2750
 Connection ~ 10050 3750
 Connection ~ 10050 4700
@@ -792,8 +732,7 @@ Connection ~ 7050 5700
 Connection ~ 7050 4700
 Connection ~ 7050 3750
 Wire Wire Line
-	6700 800  10350 800 
-Connection ~ 10350 1250
+	6700 800  10400 800 
 Wire Wire Line
 	8450 1250 8750 1250
 Wire Wire Line
@@ -855,15 +794,12 @@ Wire Wire Line
 Wire Wire Line
 	8050 4700 8200 4700
 Wire Wire Line
-	6300 1100 6300 1400
+	5800 700  5600 700 
 Wire Wire Line
-	5900 800  5700 800 
+	5700 700  5700 850 
+Connection ~ 5700 700 
 Wire Wire Line
-	5800 800  5800 950 
-Connection ~ 5800 800 
-Wire Wire Line
-	5800 1250 6750 1250
-Connection ~ 6300 1250
+	5700 1250 6750 1250
 Wire Wire Line
 	6750 1250 6750 1200
 Wire Wire Line
@@ -937,9 +873,55 @@ U 1 1 56EC9DB9
 P 2150 5200
 F 0 "J1" H 1800 5000 50  0000 C CNN
 F 1 "Power" H 2000 5450 50  0000 C CNN
-F 2 "" H 2150 5200 50  0000 C CNN
+F 2 "PJ-082BH-Barrel-Connector:PJ-082BH-Barrel-Connector" H 2150 5200 50  0000 C CNN
 F 3 "" H 2150 5200 50  0000 C CNN
 	1    2150 5200
 	1    0    0    -1  
 $EndComp
+$Comp
+L MIC94310-SYM5-TR U3
+U 1 1 56ECD499
+P 6250 750
+F 0 "U3" H 5950 1000 50  0000 C CNN
+F 1 "Armed Sense" H 6250 950 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6250 850 50  0000 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC94310.pdf" H 6250 750 50  0000 C CNN
+	1    6250 750 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1150 5700 1250
+Wire Wire Line
+	6250 1100 6250 1350
+Connection ~ 6250 1250
+Wire Wire Line
+	10400 800  10400 1600
+Connection ~ 10400 1250
+Wire Wire Line
+	4550 1600 4550 5150
+Connection ~ 4550 2200
+Connection ~ 4550 3200
+Connection ~ 4550 4150
+Wire Wire Line
+	7550 1600 7550 5150
+Connection ~ 7550 1600
+Connection ~ 7550 2200
+Connection ~ 7550 3200
+Connection ~ 7550 4150
+Wire Wire Line
+	6700 2200 7050 2200
+Wire Wire Line
+	6700 3200 7050 3200
+Wire Wire Line
+	6700 4150 7050 4150
+Wire Wire Line
+	6700 5150 7050 5150
+Wire Wire Line
+	9700 5150 10050 5150
+Wire Wire Line
+	9700 4150 10050 4150
+Wire Wire Line
+	9700 3200 10050 3200
+Wire Wire Line
+	9700 2200 10050 2200
 $EndSCHEMATC
