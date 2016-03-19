@@ -1,4 +1,4 @@
-update=25-Feb-16 21:04:56
+update=18-Mar-16 20:44:26
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -56,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=particle-boards
+LibName31=IC REG LDO 3.3V 0.2A SOT23-5
