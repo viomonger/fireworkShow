@@ -52,7 +52,8 @@ P 2350 1000
 F 0 "U1" H 2550 800 50  0000 C CNN
 F 1 "Photon Power" H 2050 1200 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:TO-263-3Lead" H 2350 1100 50  0000 C CIN
-F 3 "" H 2350 1000 50  0000 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm1085.pdf" H 2350 1000 50  0000 C CNN
+F 4 "LM1085ISX-3.3/NOPBCT-ND" H 2350 1000 60  0001 C CNN "digikey part no"
 	1    2350 1000
 	1    0    0    -1  
 $EndComp
@@ -271,6 +272,7 @@ F 0 "SW2" H 9250 1350 50  0000 C CNN
 F 1 "Arm Hardware" H 9250 1150 50  0000 C CNN
 F 2 "M2011LL1W01-switch:M2011LL1W01" H 9250 1250 50  0001 C CNN
 F 3 "" H 9250 1250 50  0000 C CNN
+F 4 "360-3287-ND" H 9250 1250 60  0001 C CNN "digikey part no"
 	1    9250 1250
 	1    0    0    -1  
 $EndComp
@@ -381,6 +383,7 @@ F 0 "Q1" H 4650 1300 50  0000 R CNN
 F 1 "EMatch Test" H 5000 1200 50  0000 R CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 4550 1350 50  0000 C CNN
 F 3 "" H 4350 1250 50  0000 C CNN
+F 4 "BSS84PH6433XTMA1CT-ND" H 4350 1250 60  0001 C CNN "digikey part no"
 	1    4350 1250
 	1    0    0    1   
 $EndComp
@@ -497,6 +500,7 @@ F 0 "SW1" H 1300 1050 50  0000 C CNN
 F 1 "Power" H 1300 850 50  0000 C CNN
 F 2 "M2011LL1W01-switch:M2011LL1W01" H 1300 950 50  0001 C CNN
 F 3 "" H 1300 950 50  0000 C CNN
+F 4 "360-3287-ND" H 1300 950 60  0001 C CNN "digikey part no"
 	1    1300 950 
 	1    0    0    -1  
 $EndComp
@@ -509,6 +513,7 @@ F 1 "10uF" H 1875 1100 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1850 1200 50  0000 C CNN
 F 3 "" H 1850 1200 50  0000 C CNN
 F 4 "tantalum" H 1850 1200 60  0001 C CNN "type"
+F 5 "511-1683-1-ND" H 1850 1200 60  0001 C CNN "digikey part no"
 	1    1850 1200
 	1    0    0    -1  
 $EndComp
@@ -521,6 +526,7 @@ F 1 "10uF" H 2825 1100 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2800 1200 50  0000 C CNN
 F 3 "" H 2800 1200 50  0000 C CNN
 F 4 "tantalum" H 2800 1200 60  0001 C CNN "type"
+F 5 "511-1683-1-ND" H 2800 1200 60  0001 C CNN "digikey part no"
 	1    2800 1200
 	1    0    0    -1  
 $EndComp
@@ -533,6 +539,7 @@ F 1 "0.47uF" H 5725 900 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5700 1000 50  0000 C CNN
 F 3 "" H 5700 1000 50  0000 C CNN
 F 4 "low-esr ceramic" H 5700 1000 60  0001 C CNN "type"
+F 5 "587-1290-1-ND" H 5700 1000 60  0001 C CNN "digikey part no"
 	1    5700 1000
 	1    0    0    -1  
 $EndComp
@@ -545,6 +552,7 @@ F 1 "10uF" H 6775 950 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6750 1050 50  0000 C CNN
 F 3 "" H 6750 1050 50  0000 C CNN
 F 4 "low-esr ceramic" H 6750 1050 60  0001 C CNN "type"
+F 5 "490-5523-1-ND" H 6750 1050 60  0001 C CNN "digikey part no"
 	1    6750 1050
 	1    0    0    -1  
 $EndComp
@@ -567,6 +575,7 @@ F 0 "M0" H 7050 2560 50  0000 C CNN
 F 1 "E-MATCH" H 7050 2430 50  0000 C CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 7050 2500 50  0001 C CNN
 F 3 "" H 7050 2500 50  0000 C CNN
+F 4 "ED2740-ND" H 7050 2500 60  0001 C CNN "digikey part no"
 	1    7050 2500
 	0    1    1    0   
 $EndComp
@@ -578,6 +587,7 @@ F 0 "M1" H 7050 3610 50  0000 C CNN
 F 1 "E-MATCH" H 7050 3480 50  0000 C CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 7050 3550 50  0001 C CNN
 F 3 "" H 7050 3550 50  0000 C CNN
+F 4 "ED2740-ND" H 7050 3550 60  0001 C CNN "digikey part no"
 	1    7050 3550
 	0    1    1    0   
 $EndComp
@@ -589,6 +599,7 @@ F 0 "M2" H 7050 4510 50  0000 C CNN
 F 1 "E-MATCH" H 7050 4380 50  0000 C CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 7050 4450 50  0001 C CNN
 F 3 "" H 7050 4450 50  0000 C CNN
+F 4 "ED2740-ND" H 7050 4450 60  0001 C CNN "digikey part no"
 	1    7050 4450
 	0    1    1    0   
 $EndComp
@@ -600,6 +611,7 @@ F 0 "M3" H 7050 5510 50  0000 C CNN
 F 1 "E-MATCH" H 7050 5380 50  0000 C CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 7050 5450 50  0001 C CNN
 F 3 "" H 7050 5450 50  0000 C CNN
+F 4 "ED2740-ND" H 7050 5450 60  0001 C CNN "digikey part no"
 	1    7050 5450
 	0    1    1    0   
 $EndComp
@@ -611,6 +623,7 @@ F 0 "M4" H 10050 2560 50  0000 C CNN
 F 1 "E-MATCH" H 10050 2430 50  0000 C CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 10050 2500 50  0001 C CNN
 F 3 "" H 10050 2500 50  0000 C CNN
+F 4 "ED2740-ND" H 10050 2500 60  0001 C CNN "digikey part no"
 	1    10050 2500
 	0    1    1    0   
 $EndComp
@@ -622,6 +635,7 @@ F 0 "M5" H 10050 3610 50  0000 C CNN
 F 1 "E-MATCH" H 10050 3480 50  0000 C CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 10050 3550 50  0001 C CNN
 F 3 "" H 10050 3550 50  0000 C CNN
+F 4 "ED2740-ND" H 10050 3550 60  0001 C CNN "digikey part no"
 	1    10050 3550
 	0    1    1    0   
 $EndComp
@@ -633,6 +647,7 @@ F 0 "M6" H 10050 4510 50  0000 C CNN
 F 1 "E-MATCH" H 10050 4380 50  0000 C CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 10050 4450 50  0001 C CNN
 F 3 "" H 10050 4450 50  0000 C CNN
+F 4 "ED2740-ND" H 10050 4450 60  0001 C CNN "digikey part no"
 	1    10050 4450
 	0    1    1    0   
 $EndComp
@@ -644,6 +659,7 @@ F 0 "M7" H 10050 5560 50  0000 C CNN
 F 1 "E-MATCH" H 10050 5430 50  0000 C CNN
 F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 10050 5500 50  0001 C CNN
 F 3 "" H 10050 5500 50  0000 C CNN
+F 4 "ED2740-ND" H 10050 5500 60  0001 C CNN "digikey part no"
 	1    10050 5500
 	0    1    1    0   
 $EndComp
@@ -871,7 +887,9 @@ P 2150 5200
 F 0 "J1" H 1800 5000 50  0000 C CNN
 F 1 "Power" H 2000 5450 50  0000 C CNN
 F 2 "PJ-082BH-Barrel-Connector:PJ-082BH-Barrel-Connector" H 2150 5200 50  0000 C CNN
-F 3 "" H 2150 5200 50  0000 C CNN
+F 3 "http://www.cui.com/product/resource/pj-082bh.pdf" H 2150 5200 50  0000 C CNN
+F 4 "CP-082BHCT-ND" H 2150 5200 60  0001 C CNN "digikey part no"
+F 5 "CP3-002BH-ND" H 2150 5200 60  0001 C CNN "mates with"
 	1    2150 5200
 	1    0    0    -1  
 $EndComp
@@ -883,6 +901,7 @@ F 0 "U3" H 5950 1000 50  0000 C CNN
 F 1 "Armed Sense" H 6250 950 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6250 850 50  0000 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC94310.pdf" H 6250 750 50  0000 C CNN
+F 4 "TA48S033AF(T6L1Q)CT-ND" H 6250 750 60  0001 C CNN "digikey part no"
 	1    6250 750 
 	-1   0    0    -1  
 $EndComp
@@ -933,6 +952,7 @@ F 0 "LED1" H 800 1400 50  0000 C CNN
 F 1 "Battery" H 800 1200 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 800 1300 50  0000 C CNN
 F 3 "" H 800 1300 50  0000 C CNN
+F 4 "732-4978-1-ND" H 800 1300 60  0001 C CNN "digikey part no"
 	1    800  1300
 	0    -1   -1   0   
 $EndComp
@@ -944,6 +964,7 @@ F 0 "LED2" H 1300 1850 50  0000 C CNN
 F 1 "3.3" H 1300 1650 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 1300 1750 50  0000 C CNN
 F 3 "" H 1300 1750 50  0000 C CNN
+F 4 "732-4981-1-ND" H 1300 1750 60  0001 C CNN "digikey part no"
 	1    1300 1750
 	0    -1   -1   0   
 $EndComp
@@ -955,6 +976,7 @@ F 0 "LED3" H 10400 1950 50  0000 C CNN
 F 1 "Armed" H 10400 1750 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 10400 1850 50  0000 C CNN
 F 3 "" H 10400 1850 50  0000 C CNN
+F 4 "732-4971-1-ND" H 10400 1850 60  0001 C CNN "digikey part no"
 	1    10400 1850
 	0    -1   -1   0   
 $EndComp
@@ -970,6 +992,7 @@ F 0 "R1" V 880 1650 50  0000 C CNN
 F 1 "600" V 800 1650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 730 1650 50  0000 C CNN
 F 3 "" H 800 1650 50  0000 C CNN
+F 4 "311-600HCT-ND" V 800 1650 60  0001 C CNN "digikey part no"
 	1    800  1650
 	1    0    0    -1  
 $EndComp
@@ -981,6 +1004,7 @@ F 0 "R3" V 10480 2200 50  0000 C CNN
 F 1 "600" V 10400 2200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 10330 2200 50  0000 C CNN
 F 3 "" H 10400 2200 50  0000 C CNN
+F 4 "311-600HCT-ND" V 10400 2200 60  0001 C CNN "digikey part no"
 	1    10400 2200
 	1    0    0    -1  
 $EndComp
@@ -992,6 +1016,7 @@ F 0 "R2" V 1380 2100 50  0000 C CNN
 F 1 "165" V 1300 2100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 1230 2100 50  0000 C CNN
 F 3 "" H 1300 2100 50  0000 C CNN
+F 4 "311-165HRCT-ND" V 1300 2100 60  0001 C CNN "digikey part no"
 	1    1300 2100
 	1    0    0    -1  
 $EndComp
