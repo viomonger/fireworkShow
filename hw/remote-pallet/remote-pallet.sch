@@ -475,9 +475,9 @@ Text GLabel 1550 3600 0    60   Input ~ 0
 Sense6
 Text GLabel 1550 3300 0    60   Input ~ 0
 Sense7
-Text GLabel 3150 3500 2    60   Input ~ 0
-SenseSwitch
 Text GLabel 3150 3000 2    60   Input ~ 0
+SenseSwitch
+Text GLabel 3150 3500 2    60   Input ~ 0
 Armed
 Text GLabel 1550 3100 0    60   Input ~ 0
 3.3V
